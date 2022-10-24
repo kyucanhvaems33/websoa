@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="./home/home.css">
+</head>
+<body>
+    <div class = "container">
+        <div class = "tab">
+            <button class = "tablinks" onclick="login(event,'login')">Đăng nhập</button>
+            <button class = "tablinks" onclick="login(event,'register')">Đăng ký</button>
+        </div>
+
+        <div id = "login" class="tabcontent">
+            <div class = "form">
+                <p>Email</p>
+                <input type="text" class="username" id = "username">              
+            </div>
+            <div class = "form">
+                <p>Mật khẩu</p>
+                <input type="password" class="password" id = "password">           
+            </div>
+            <button class = "btn_login" id = "btn_login">Đăng nhập</button>
+        </div>
+
+        <div id = "register" class="tabcontent">
+            <div class = "avatar">
+                <label for="upAvatar"><img id = 'avatar' src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"></label>
+                <input type="file" id = "upAvatar" accept="image/*">
+            </div>
+            <div class = "form">
+                <p>Email</p>
+                <input type="email" class="username" id = "usernameRegister">              
+            </div>
+            <div class = "form">
+                <p>Mật khẩu</p>
+                <input type="password" class="password" id = "passwordRegister">           
+            </div>
+            <div class = "form">
+                <p>Họ tên</p>
+                <input type="text" class="password" id = "name">           
+            </div>
+            <div class = "form">
+                <p>Ngày sinh</p>
+                <input type="date" class="password" id = "dob">           
+            </div>
+            <div class = "form" id = "hide">
+                <p>Tuổi</p>
+                <input type="text" class="password" id = "age">           
+            </div>
+            <button class = "btn_login" id = "btn_register">Đăng ký</button>
+        </div>
+    </div>
+    <script src="./home/front_handle.js"></script>
+    <script src="./home/main.js"></script>
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+</body>
+</html>

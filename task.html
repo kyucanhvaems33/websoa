@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="./task/task.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="submit1">
+                <input type="text" id = "task" placeholder="Nhập tên công việc của bạn!">
+                <input type="file" id = "file" accept=".doc,.docx,.csv,.xlsx,.pdf,image/*">
+            </div>
+            <div class="submit2">
+                <button class="submit" id = "submit">Thêm</button>
+                <button class="submit" id = "logout">Đăng xuất</button>
+            </div>
+
+            <input type="checkbox" id = "checkbox">
+            <!-- <input type="checkbox" id = "checkboxEdit"> -->
+            
+            <label class = "avatar" for = "checkbox">
+                <img alt="Avatar" class="avatar" id = "avatar">
+            </label>
+
+            <label for="checkbox" class="modal" id="modal">
+            </label>
+            <div class="modalContent">
+                <div style="justify-content: center;">
+                    <label for="inputAvatar"><img alt="avatar" id = "avatar1" src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"  ></label>
+                    <input type="file" accept="image/*" id = "inputAvatar">
+                </div>
+                <div class="space">
+                    <p>Tên </p>
+                    <input type="text" name="" id="editName">
+                </div>
+                <div class="space">
+                    <p>Ngày sinh </p>
+                    <input type="date" name="" id="editDate">
+                </div>
+                <div style="display: flex; justify-content: center;">
+                    <button id = "save">Lưu</button>
+                    <button style="margin-left: 50px;" onclick="cancel()">Huỷ</button>
+                </div>
+            </div>      
+            </div>
+        </div>
+        <div class="content" id = "content">
+            <!-- <div id = "${item.id}" class = "wrapper">
+                <div class = "leftWrapper">
+                    <h3>${item.task}</h3>
+                    <p>Tệp đính kèm: ${linkfile?`<a href = "https://todolistthangbui.herokuapp.com/api/apiv1/task/file/${item.id}">Click me</a>`:'Không có tệp đính kèm'}</p>
+                    <div>
+                        <p>Ngày tạo: ${createdAt}</p>
+                        <p>Ngày kết thúc: ${finishedAt}</p>
+                        <select id = "status" >
+                            <option value = "1" ${item.status?'selected':''}>Đã hoàn thành</option>
+                            <option value = "0"${item.status?'':'selected'}>Đang thực hiện</option>
+                        </select>
+                    </div>
+                </div>
+                <div class = "rightWrapper">
+                    <button >Sửa</button>
+                    <button >Xoá</button>
+                </div>
+            </div> -->
+        </div>
+        <div class="modal" id="modal1"></div>
+        <div class="modalEdit" id = "modalEdit"></div>
+    </div>
+    <script src="https://unpkg.com/moment@2.29.4/moment.js"></script>
+    <script src="./task/main.js"></script>
+</body>
+</html>

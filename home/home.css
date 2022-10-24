@@ -1,0 +1,95 @@
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.tab {
+  width: fit-content;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  display: flex;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+    display: flex;
+    flex-direction: column;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  /* border-top: none; */
+  width: 20%;
+}
+
+.tabcontent > div + div{
+  margin-top: 20px;
+}
+
+.tabcontent > button{
+  margin-top: 20px;
+}
+
+.form{
+    display: flex;
+
+}
+
+.form > p {
+  width: 30%;
+}
+
+.form > input{
+  width: 70%;
+}
+
+#upAvatar{
+  display: none;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
+
+.btn_login{
+  width: 50%;
+  align-self: center;
+}
+
+.avatar{
+  display: flex;
+  justify-content: center;
+}
+
+.avatar > label > img{
+  width: 124px;
+  height: 124px;
+  object-fit: cover;
+}
+
+
+#hide{
+  display: none;
+}

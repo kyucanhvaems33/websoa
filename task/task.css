@@ -1,0 +1,176 @@
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.submit1{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.submit2{
+    width: 10%;
+}
+
+#task{
+    height: 25px;
+    border: 1px solid rgb(127, 127, 127);
+    border-radius: 10px;
+    padding-left: 10px;
+    
+}
+
+#file{
+    margin-top: 10px;
+}
+
+.submit{
+    height: 45px;
+    margin-left: 10px;
+    /* width: 20%; */
+    /* border: 1px solid rgb(127, 127, 127);
+    border-radius: 10px; */
+}
+
+.avatar{
+    position: fixed;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid rgb(189, 189, 189);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.content > div + div{
+    margin-top: 20px;
+}
+
+.wrapper{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 60%;
+    display: flex;
+    padding: 20px;
+}
+
+.leftWrapper{
+    width: 80%;
+}
+
+.leftWrapper > p{
+    margin-top: 20px;
+  }
+  
+
+.leftWrapper > div{
+    display: flex;
+    margin-top: 20px;
+}
+
+.leftWrapper > div > p{
+    width: 40%;
+}
+
+.leftWrapper > div > select{
+    width: 20%;
+}
+/* .leftWrapper > div > p + p{
+    margin-left: 20px;
+}
+
+.leftWrapper > div > select{
+    margin-left: 20px;
+} */
+
+.rightWrapper{
+    width: 20%;
+}
+
+
+p,h3{
+    padding: 0;
+    margin: 0;
+}
+
+.modal{
+    display: none;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.315);
+    z-index: 0;
+}
+
+.modalContent{
+    position: fixed;
+    display: none;
+    z-index: 1;
+    width: 20%;
+    height: fit-content;
+    background-color: #fefefe;
+    margin-top: 100px;
+    padding: 20px;
+    border: 1px solid #888;
+}
+
+.modalContent > div{
+    display: flex;
+}
+
+.modalContent > div + div{
+    margin-top: 20px;
+}
+
+#checkbox {
+    display: none;
+}
+
+#checkbox:checked ~ .modal{
+    display: block;
+}
+
+#checkbox:checked ~.modalContent{
+    display: block;
+}
+
+#inputAvatar{
+    display: none;
+}
+
+#avatar1{
+    width: 124px;
+    height: 124px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid rgb(189, 189, 189);
+}
+
+.space > input{
+    width: 70%;
+}
+
+.space > p{
+    width: 30%;
+}
+
+.modalEdit{
+    z-index: 2;
+    position: fixed;
+    background-color: #fefefe;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 60%;
+    display: none;
+    padding: 20px;
+    margin-left: 18%;
+    top: 30%;
+}
